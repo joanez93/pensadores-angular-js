@@ -1,0 +1,141 @@
+/* --------------------------------
+	-Folha de estilos Pensadores  
+	-Autor: Joanez Andrades
+	-05/11/2015 
+----------------------------------- */
+/*Importação de fontes*/
+@import url(http://fonts.googleapis.com/css?family=Montserrat:700); /*Titulos - h1, h2, h3...*/
+@import url(http://fonts.googleapis.com/css?family=Roboto); /*Paragráfos - p, span*/
+@import url(http://fonts.googleapis.com/css?family=Oxygen); /*Menus, ul, li, botões e links*/
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icons/icomoon.eot?-gu21mg');
+	src:url('fonts/icons/icomoon.eot?#iefix-gu21mg') format('embedded-opentype'),
+		url('fonts/icons/icomoon.woff?-gu21mg') format('woff'),
+		url('fonts/icons/icomoon.ttf?-gu21mg') format('truetype'),
+		url('fonts/icons/icomoon.svg?-gu21mg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+/*Configurações globais*/
+html{
+	/*overflow: hidden;*/
+}
+body{
+	margin: 0 auto;
+	font-size: 62.5%;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Montserrat', 'icomoon', sans-serif; margin: 0;
+}
+p,span,i{
+	font-family: 'Roboto', 'icomoon', sans-serif;
+}
+nav,ul,li,button,a{
+	font-family: 'Oxygen', 'icomoon', sans-serif;
+}
+ul, li, a{
+	list-style: none; 
+	text-decoration: none;
+}
+
+/*Icons*/
+.ico-facebook:before{ content: '\e76a'; padding-top: .2em;}
+.ico-instagram:before{ content: '\e76c'; padding: .2em;}
+.ico-twitter:before{ content: '\e76e'; padding: .2em;}
+.ico-wikipedia:before{ content: '\e621'; padding: .2em;}
+
+@media(min-width: 1366px){
+	
+	h1{font-size: 5em;}
+	h2{font-size: 3.5em;}
+	h3{font-size: 3em;}
+	h4{font-size: 2.5em;}
+	ul li{font-size: 2em;}
+	p{font-size: 1.6em;}
+	span{font-size: 1.3em;}
+
+	header{
+		background: url(../img/bg.jpg) no-repeat;
+		background-size: 100% 100%;
+		width: 100%;
+		min-height: 100vh;
+		height: 100%;
+		margin: 0 auto;
+	}
+
+	header .bg-one{
+		background: rgba(236, 240, 241, .3);
+		width: 100%;
+		height: 50vh;
+		margin: 0;
+	}
+	header .bg-two{
+		background: rgba(44, 62, 80, .3) ;
+		width: 100%;
+		height: 50vh;
+		margin: 0;
+	}
+	header .title{
+		color: #FFFFFF;
+		text-align: center;
+		line-height: 200px
+	}
+	header .text{
+		color: #FFFFFF;
+		text-align: center;
+	}
+
+
+	section{
+		width: 100%;
+		height: 100vh;
+	}
+	section div.header-think{
+		background: rgba(189, 195, 199,  .5);
+		width: 100%;
+		height: 20vh;
+	}
+		section div.header-think .pic{
+			width: 120px;
+			height: 120px;
+			border: 2px solid rgba(189, 195, 199, .5);
+			border-radius: 100%;
+			float: left;
+			padding: .2em;
+			margin: 1%;
+		}
+
+		section div.header-think .links-sociais li{
+			display: inline-block;
+			text-align: left;
+			padding: .4em;
+		}
+
+	section article.pensamentos ul.group-frases div.box-frase{
+		background: rgba(22, 160, 133, .8);
+		width: 90%;
+		height: 6em;
+		padding: .3em;
+		color: #FFFFFF;
+		border: 3px solid rgba(22, 160, 133, 1.0);
+		border-radius: 10px;
+		margin: .5% 0 .5% 0;
+		display: inline-block
+	}
+		section article.pensamentos ul.group-frases div.box-frase li.frase{
+			width: 88%;
+			border-right: 3px solid #00796B;
+			display: inline-block;
+
+		}
+	section article.pensamentos ul.group-frases button{
+		background: #FF6600;
+		width: 10%;
+		height: 3em;
+		top: 0;
+		margin-left: 1%;
+		border: none;
+
+	}
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html ng-app="pensadores" lang="pt-br">
+<head>
+	<meta charset="utf-8">
+
+	<!-- Css -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/grid-izzy.css">
+
+	<!-- Javascript -->
+	<script type="text/javascript" src="angular-1.4.7/angular.js"></script>
+	<script type="text/javascript" src="msg.js"></script>
+
+	<!-- Título -->
+	<title>Pensadores contemporâneos</title>
+</head>
+<body>
+	<header>
+	<div class="bg-one">
+		<h1 class="title">Pensadores contemporâneos</h1>
+		<h3 class="text">Escolha seu favorito e compartilhe!</h3>
+	</div>
+	<div class="bg-two">
+		
+	</div>
+		
+	</header>
+	<section id="pens-nietzsche" ng-controller="pensamentos">
+		<div class="header-think" ng-repeat="perfilNietzsche in perfilNietzsche">
+			<div class="colunm-3">
+				<img class="pic colunm-2" src="img/pic/Nietzsche.jpg">
+				<ul class="colunm-2">
+					<li>{{perfilNietzsche.nome}}</li>
+					<li>{{perfilNietzsche.work}}</li>
+					<li>{{perfilNietzsche.nat}}</li>
+				</ul>
+			</div>
+			<div class="colunm-3">
+				<h4>Descrição curta</h4>
+				<p>{{perfilNietzsche.desc}}</p>
+			</div>
+			<div class="colunm-3">
+				<h4>Links sociais</h4>
+				<ul class="links-sociais">
+					<a href="#" title="Link: Facebook" target="_blank"><li class="ico-facebook"></li></a>
+					<a href="#" title="Link: Twitter" target="_blank"><li class="ico-twitter"></li></a>
+					<a href="#" title="Link: Instagram" target="_blank"><li class="ico-instagram"></li></a>
+					<a href="#" title="Link: Wikipédia" target="_blank"><li class="ico-wikipedia"></li></a>
+				</ul>
+			</div>
+		</div>
+		
+		<article class="pensamentos">
+			<h2>#Pensamentos</h2>
+			<ul class="group-frases"  ng-repeat="nietzche in nietzche">
+				<div class="box-frase"><li class="ico-frase frase">{{nietzche.frase}}</li><button>Copiar</button></div>
+			</ul>
+		</article>
+		
+	</section>
+	<!-- <section id="pens-Mquintana" ng-controller="pensamentos">
+		<h2>Pensamentos Mario Quintana</h2>
+		<ul class="group-frases">
+			<li class="ico-frase frase">{{quintanaOne}}</li>
+			<li class="ico-frase frase">{{quintanaTwo}}</li>
+			<li class="ico-frase frase">{{quintanaThree}}</li>
+			<li class="ico-frase frase">{{quintanaFour}}</li>
+			<li class="ico-frase frase">{{quintanaFive}}</li>
+		</ul>
+	</section>
+	<section id="pens-Massis" ng-controller="pensamentos">
+		<h2>Pensamentos Machado de Assis</h2>
+		<ul class="group-frases">
+			<li class="ico-frase frase">{{assisOne}}</li>
+			<li class="ico-frase frase">{{assisTwo}}</li>
+			<li class="ico-frase frase">{{assisThree}}</li>
+			<li class="ico-frase frase">{{assisFour}}</li>
+			<li class="ico-frase frase">{{assisFive}}</li>
+		</ul>
+	</section> -->
+
+</body>
+</html>
