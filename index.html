@@ -9,7 +9,7 @@
 
 	<!-- Javascript -->
 	<script type="text/javascript" src="angular-1.4.7/angular.js"></script>
-	<script type="text/javascript" src="msg.js"></script>
+	<script type="text/javascript" src="js/msg.js"></script>
 
 	<!-- Título -->
 	<title>Pensadores contemporâneos</title>
@@ -51,9 +51,9 @@
 		</div>
 		
 		<article class="pensamentos">
-			<h2>#Pensamentos</h2>
+			<h2 class="title">#Pensamentos</h2>
 			<ul class="group-frases"  ng-repeat="nietzche in nietzche">
-				<div class="box-frase"><li class="ico-frase frase">{{nietzche.frase}}</li><button>Copiar</button></div>
+				<div class="box-frase"><li class="ico-frase frase">{{nietzche.frase}}</li><div class="align-ico"><i class="ico-copy"></div></i></div>
 			</ul>
 		</article>
 		
