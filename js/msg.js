@@ -1,6 +1,16 @@
 var  app = angular.module("pensadores", []);
 /* Pensamentos Nietzsche*/
 	angular.module("pensadores").controller("pensamentos", function($scope){
+
+		$scope.perfilPensadores = [
+			{nome: "Sócrates", epoca: "470 a.C. – 399 a.C.", destaque: "Só sei que nada sei."},
+			{nome: "Aristóteles", epoca: "384 a.C.-322 a.C", destaque: "O ignorante afirma o sábio duvida, o sensato reflete."},
+			{nome: "Platão", epoca: "428/27 a.C.-347 a.C", destaque: "Quem comete uma injustiça é sempre mais infeliz que o injustiçado."},
+			{nome: "René Descartes", epoca: "1596-1650", destaque: "Penso, logo existo."},
+			{nome: "Friedrich Nietzsche", epoca: "1844-1900", destaque: "Não há fatos eternos, como não há verdades absolutas."},
+			{nome: "Euclides", epoca: "360 a.C.-295 a.C.", destaque: "Um número é uma pluralidade composta de unidades"}
+		];
+
 		$scope.perfilNietzsche = [
 			{
 				nome: "Friedrich Nietzsche",

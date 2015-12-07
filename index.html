@@ -12,20 +12,31 @@
 	<script type="text/javascript" src="js/msg.js"></script>
 
 	<!-- Título -->
-	<title>Pensadores contemporâneos</title>
+	<title>Pensadores - Angular-JS</title>
 </head>
-<body>
+<body ng-controller="pensamentos">
 	<header>
 	<div class="bg-one">
-		<h1 class="title">Pensadores contemporâneos</h1>
+		<h1 class="title">Pensadores</h1>
 		<h3 class="text">Escolha seu favorito e compartilhe!</h3>
 	</div>
 	<div class="bg-two">
-		
+		<div class="pick-pensador">
+			<ul>
+				<li class="colunm-6" ng-repeat="perfil in perfilPensadores">
+					<img src="img/pic/perfil.jpg" title="Pensador">
+					<div class="previa">
+						<span>{{perfil.nome}}</span>
+						<span>{{perfil.epoca}}</span>
+						<span>{{perfil.destaque}}</span>
+					</div>
+				</li>
+			</ul>
+		</div>
 	</div>
 		
 	</header>
-	<section id="pens-nietzsche" ng-controller="pensamentos">
+	<section id="pens-nietzsche">
 		<div class="header-think" ng-repeat="perfilNietzsche in perfilNietzsche">
 			<div class="colunm-3">
 				<img class="pic colunm-2" src="img/pic/Nietzsche.jpg">
