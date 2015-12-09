@@ -4,12 +4,13 @@
 	<meta charset="utf-8">
 
 	<!-- Css -->
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/grid-izzy.css">
 
 	<!-- Javascript -->
-	<script type="text/javascript" src="angular-1.4.7/angular.js"></script>
-	<script type="text/javascript" src="js/msg.js"></script>
+	<script type="text/javascript" src="lib/angular-1.4.7/angular.js"></script>
+	<script type="text/javascript" src="lib/app-pensadores.js"></script>
 
 	<!-- Título -->
 	<title>Pensadores - Angular-JS</title>
@@ -21,15 +22,18 @@
 		<h3 class="text">Escolha seu favorito e compartilhe!</h3>
 	</div>
 	<div class="bg-two">
-		<div class="pick-pensador">
+		<div class="destaques">
+		<h2 class="subtitle">Destaques</h2>
 			<ul>
-				<li class="colunm-6" ng-repeat="perfil in perfilPensadores">
-					<img src="img/pic/perfil.jpg" title="Pensador">
-					<div class="previa">
-						<span>{{perfil.nome}}</span>
-						<span>{{perfil.epoca}}</span>
-						<span>{{perfil.destaque}}</span>
-					</div>
+				<li class="colunm-4" ng-repeat="perfil in perfilPensadores | filter:4">
+					<div class="perfil">
+						<img src="img/pic/Nietzsche.jpg" title="Pensador">
+						<div class="previa">
+							<span>{{perfil.nome}}</span>
+							<span>{{perfil.epoca}}</span>
+							<!-- <span>{{perfil.destaque}}</span> -->
+						</div>
+					</div>		
 				</li>
 			</ul>
 		</div>
